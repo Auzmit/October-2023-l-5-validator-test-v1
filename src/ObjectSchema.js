@@ -2,8 +2,7 @@ export default class ObjectSchema {
   validators = {};
 
   shape(fields) {
-    // eslint-disable-next-line
-    Object.keys(fields).map((key) => this.validators[key] = fields[key]);
+    this.validators = Object.assign(this.validators, fields);
     return this;
   }
 
@@ -13,7 +12,6 @@ export default class ObjectSchema {
       return false;
     }
 
-    const validations = keys.map((key) => this.validators[key].isValid(value[key]));
-    return !validations.includes(false);
+    return keys.every((key) => this.validators[key].isValid(value[key]));
   }
 }
