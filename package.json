@@ -1,6 +1,6 @@
 {
   "name": "work",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -12,14 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sseezov/tst.git"
+    "url": "git+https://github.com/Auzmit/October-2023-l-5-validator-test-v1"
   },
-  "author": "",
+  "author": "solved by Auzmit",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sseezov/tst/issues"
-  },
-  "homepage": "https://github.com/sseezov/tst#readme",
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
     "lodash": "^4.17.21"
