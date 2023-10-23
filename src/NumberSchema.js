@@ -1,11 +1,5 @@
 export default class Numberschema {
-  // validators = [(value) => isNaN(value)];
   validators = [(value) => typeof value === 'number'];
-
-  // number(value) {
-  //   this.validators.push((value) => !isNaN(value));
-  //   return this;
-  // };
 
   even() {
     this.validators.push((value) => value % 2 === 0);
